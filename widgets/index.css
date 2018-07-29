@@ -72,6 +72,7 @@ h2 {
   text-align: center;
   padding: 10px;
   margin-top: 20px;
+  box-sizing: border-box;
 }
 
 .clock {
@@ -81,6 +82,7 @@ h2 {
 .weather-content {
   background: lightgreen;
   color: black;
+  min-height: 108px;
 }
 
 .clock-time {
@@ -91,7 +93,7 @@ h2 {
 
 .bottom-tabs {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .tabs-container {
@@ -138,4 +140,25 @@ h2 {
 .tabs-headers li:hover {
   color: white;
   background: black;
+}
+
+.autocomplete-content {
+  background: magenta;
+  min-height: 200px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.autocomplete-content input {
+  background: white;
+}
+
+.autocomplete-content ul {
+  list-style: square;
+  color: white;
+  padding-left: 20px;
+}
+
+.autocomplete-content li:hover {
+  cursor: pointer;
 }
