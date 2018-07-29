@@ -62,17 +62,25 @@ h2 {
   font-weight: 300;
 }
 
-.clock {
-  background-image: url('https://uploads6.wikiart.org/images/salvador-dali/the-persistence-of-memory-1931.jpg!Large.jpg');
+.clock, .weather-content {
   background-size: cover;
   background-repeat: no-repeat;
   width: 500px;
   border: 3px solid black;
-  color: red;
+  color: white;
   margin: auto;
   text-align: center;
   padding: 10px;
   margin-top: 20px;
+}
+
+.clock {
+  background: orange;
+}
+
+.weather-content {
+  background: lightgreen;
+  color: black;
 }
 
 .clock-time {
@@ -81,12 +89,13 @@ h2 {
   padding: 0 20px;
 }
 
-.tabs-container {
-  width:300px;
-}
-
 .bottom-tabs {
   display: flex;
+  justify-content: center;
+}
+
+.tabs-container {
+  width: 200px;
 }
 
 .tabs-headers ul {
@@ -99,19 +108,34 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 300px;
+  min-height: 200px;
   background: lightblue;
-  border: 2px solid black
+  border: 2px solid black;
+  border-top: 0;
+  font-size: 24px;
 }
 
 .tabs-headers li {
   background: lightblue;
   flex-grow: 1;
-  border-radius: 10px 10px 0 0;;
-  border: 2px solid black;
+  border-radius: 10px 10px 0 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
   text-align: center;
+  cursor: pointer;
 }
 
-.tabs-headers li button {
-  padding: 0 30px;
+.tabs-headers li:first-child {
+  border-left: 2px solid black;
+}
+
+.tabs-headers li:last-child {
+  border-right: 2px solid black;
+}
+
+.tabs-headers li:hover {
+  color: white;
+  background: black;
 }

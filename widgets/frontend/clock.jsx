@@ -5,7 +5,6 @@ class Clock extends React.Component {
     super(props);
     this.state = {
       date: new Date()
-
     };
   }
 
@@ -22,9 +21,6 @@ class Clock extends React.Component {
   }
 
   render() {
-    // const hours = this.state.date.getUTCHours();
-    // const minutes = this.state.date.getUTCMinutes();
-    // const seconds = this.state.date.getUTCSeconds();
     const date = this.state.date.toDateString();
     const time = this.state.date.toLocaleTimeString() + " PDT";
 
